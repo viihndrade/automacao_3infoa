@@ -26,6 +26,15 @@ print(planilha)
 planilha.loc[len(planilha)]  = ['Izabel', 17, 'M', 78, 1.85]
 print(planilha)
 
+#atualizar apenas uma coluna
+planilha.loc[19,'Idade'] =  25
+print (planilha)
+
+#atualizar duas ou mais colunas
+planilha.loc[19,'Idade', 'Peso'] =  [25,2]
+print (planilha)
+
+
 #atualizar a linha inteira
 planilha.loc [19] = ['Ivan Paulino', 40, 'M', 85, 1.75]
 print(planilha)
